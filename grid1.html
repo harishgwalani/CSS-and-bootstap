@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid_Layout</title>
+</head>
+<style>
+    .grid-container
+    {
+        display: grid;
+        background-color: red;
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 10px;
+        height: 500px;
+    }
+    .grid-item1
+    {
+        background-color: chartreuse;
+        border: 1px solid black;
+        grid-column: 1 / span 2;
+    }
+    .grid-item2
+    {
+        background-color: chartreuse;
+        border: 1px solid black;
+        grid-row: 1 / span 2;
+    }
+    .grid-item3
+    {
+        background-color: chartreuse;
+        border: 1px solid black;
+    }
+    .grid-item4
+    {
+        background-color: chartreuse;
+        border: 1px solid black;
+    }
+    .grid-item5
+    {
+        background-color: chartreuse;
+        border: 1px solid black;
+    }
+
+</style>
+<body>
+    <div class="grid-container">
+        <div class="grid-item1">columns-1</div>
+        <div class="grid-item2">columns-2</div>
+        <div class="grid-item3">columns-3</div>
+        <div class="grid-item4">columns-4</div>
+        <div class="grid-item5">columns-5</div>
+      </div> 
+</body>
+</html>
